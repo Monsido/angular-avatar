@@ -10,7 +10,7 @@ Angular Avatar is a simple and lightweight AngularJS directive that generates a 
 
 This example in plunker: https://plnkr.co/edit/bhnvU3?p=preview
 
-## Quick start. 
+## Quick start.
 
 #### 1 Download and Install angular-avatar:
 
@@ -19,7 +19,7 @@ This example in plunker: https://plnkr.co/edit/bhnvU3?p=preview
  - NuGet: **PM> Install-Package angular-avatar**
  - github: **https://github.com/ajsoriar/angular-avatar**
 
-#### 2 Include dependences: 
+#### 2 Include dependences:
 2.1 angular-avatar.js or angular-avatar.min.js are under dist folder.
 
 2.2 Include angular-avatar.js or angular-avatar.min.js after angular dependences, e.g.
@@ -35,7 +35,7 @@ This example in plunker: https://plnkr.co/edit/bhnvU3?p=preview
 var app = angular.module('myApp', ['ngAvatar']);
 ```
 
-#### 3 Use it. 
+#### 3 Use it.
 No need to inject in controllers just use it in your html code this way:
 ```javascript
 <ng-avatar initials="A"></ng-avatar>
@@ -86,7 +86,7 @@ Run the live example in plunker: http://plnkr.co/edit/TfCxUn?p=preview
 | `upper-case`         | false | Just put `upper-case="true"` and the input string will be transformed into capitals. |
 | `round-shape`        | false | When set to `true` the avatar will take a round shape. By default the avatar will have a square shape. |
 | `corner-radius`      | 0     | Square avatars can have rounded corners using this property. |
-| `picture-resolution` | 256   | This attribute sets the real resolution (width and height in pixels) of the picture that this directive generates. `width` attribute will scale the picture using only styles. | 
+| `picture-resolution` | 256   | This attribute sets the real resolution (width and height in pixels) of the picture that this directive generates. `width` attribute will scale the picture using only styles. |
 | `pixelated`          | false | If ng-avatar's `width` is bigger than `picture-resolution` attribute, the web browser will scale the image and we will get a blurry picture. This attribute deactivates the anti-aliasing effect and you will get a pixelated image. Useful If you want a retro styling. |
 | `wrapper`            | true  | ng-avatar generates an img tag and a div layer that wraps the image. A boolean false value removes the div that wraps the avatar's image. This wrapping div has an special class `class="avatar-wrapper"` that can be used to apply extra styling. ng-avatar uses this div to generate a round avatar applying extra styles when round-shape attribute is true, `round-shape="true"` |
 | `class`              | null  | Use this attribute in the same way it is used in common html tags. |
@@ -96,12 +96,13 @@ Run the live example in plunker: http://plnkr.co/edit/TfCxUn?p=preview
 | `auto-color`         | false | By default the generated picture will have a black background if no color is assigned. Setting `auto-color="true"` will automatically assign a color to the avatar's background depending on the combination of characters used. |
 | `colors-palette`     | default colors | Change the palette used by `auto-color`. You can provide an array in your HTML or via the controller. |
 | `text-shadow`        | false | This paints an elegant thin shadow around the edges of each letter. |
+| `alt`                | "Avatar" | Add `alt` attribute to the generated image. |
 
 #### 4 License
 
 MIT
 
-Copyright (c) 2016 
+Copyright (c) 2016
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
