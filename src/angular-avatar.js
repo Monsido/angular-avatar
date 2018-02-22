@@ -68,7 +68,7 @@
                     _bind = false,
                     _img_width = "100%",
                     _upperCase = false,
-                    _altText = "Avatar";
+                    _alt_text = "Avatar";
 
                 function checkValues(){
 
@@ -177,7 +177,7 @@
                     }
 
                     if (scope.alt != undefined){
-                        _altText = scope.alt;
+                        _alt_text = scope.alt;
                     }
 
 
@@ -240,7 +240,7 @@
 
                     var html = '';
                     if (_wrapper) html += '<div class="avatar-wrapper '+ _extra_classes +'" style="'+ _wrapper_styling +' width:' + _long + 'px; height:' + _long + 'px; '+ _extra_styles +'">';
-                    html += '<img src="' + imgData + '" class="avatar-picture '+ _extra_img_classes +'" style="'+ _img_styling + '" alt="' + _altText + '" width="'+ _img_width +'" height=""/>';
+                    html += '<img src="' + imgData + '" class="avatar-picture '+ _extra_img_classes +'" style="'+ _img_styling + '" alt="' + _alt_text + '" width="'+ _img_width +'" height=""/>';
                     if (_wrapper) html += '</div>';
 
                     var replacementElement = angular.element(html);

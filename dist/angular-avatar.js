@@ -68,7 +68,7 @@
                     _bind = false,
                     _img_width = "100%",
                     _upperCase = false,
-                    _altText = "Avatar";
+                    _alt_text = "Avatar";
 
                 function checkValues(){
 
@@ -177,7 +177,7 @@
                     }
 
                     if (scope.alt != undefined){
-                        _altText = scope.alt;
+                        _alt_text = scope.alt;
                     }
 
 
